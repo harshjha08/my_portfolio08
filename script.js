@@ -1,6 +1,5 @@
 var themebtn = document.getElementById("themebtn");
 
-// ✅ Page load hote hi check karo last saved theme
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");
     themebtn.src = "sun.png";
@@ -20,3 +19,12 @@ themebtn.onclick = function() {
         localStorage.setItem("theme", "light");  // Save light mode
     }
 }
+ function msg(){
+        alert("this is not working");
+    }
+   function submitForm(){
+    var username = 
+    document.getElementById("fullName").value;
+    alert(" Thanks " + username + " for you valuable time. we will give response as soon as possible  ");
+   }
+  

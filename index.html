@@ -11,10 +11,10 @@
     <div class="fullbody">
     
     <div class="navbar">
-        <img id="profilepic" src="mysmallpic.jpg" alt="my pic">
+        <img id="profilepic" onclick="popupmsg()"src="mysmallpic.jpg" alt="my pic">
     <a href="index.html" class="active">Home <i class="fa-solid fa-house"></i></a>
     <a href="education.html">Education <i class="fa-solid fa-building-columns"></i></a>
-    <a href="experience.html">Experience <i class="fa-solid fa-briefcase"></i></a>
+    <!-- <a href="experience.html">Experience <i class="fa-solid fa-briefcase"></i></a> -->
     <a href="skills.html">Skills <i class="fa-solid fa-screwdriver-wrench"></i></a>
     <a href="projects.html">Projects <i class="fa-solid fa-list-check"></i></a>
     <a href="aboutme.html">About Me <i class="fa-solid fa-address-card"></i></a>
@@ -24,7 +24,7 @@
         <!-- <div class="switchtheme">
       <a href="../My portfolio dark/index2.html">switch theme <i class="fa-solid fa-cloud-moon"></i></a> 
       </div> -->
-      Change Theme<img src="moon.png"  id="themebtn">
+    <img src="moon.png"  id="themebtn">
     </div>
     <div class="page1home">
     <img id="bannerimg" src="banner.png">
@@ -53,7 +53,7 @@
                 Passionate about building websites,apps and exploring cybersecurity.Currently learning BCA and  working on projects to sharpen my skills.
                 </p>
                 <div class="buttonsindex">
-                    <a href="Fake-Resume.pdf" target="_blank"  download class="btn">Download CV</a>
+                    <a href="Harsh jha CV Resume.pdf" target="_blank"  download class="btn">Download CV</a>
                     <a href="#" class="btn secondary">My projects</a>
 
                 </div>
@@ -74,8 +74,7 @@
                 <div class="allcards">
                     <div id="card1" class="everycard">
                      <img src="cssimage.jpeg">
-                      <a href="python.pdf">
-<button class="btncard" type="button">View Details</button></a> 
+<button class="btncard" type="button" onclick="msg()" >View Details</button></a> 
                     </div>
                     <div id="card2" class="everycard">
                         <img src="html2images.png">
@@ -186,13 +185,14 @@
     <script src="script.js">
     </script>
     <script>
-        <!-- alert("Hi welcome to my portfolio");
+         <!-- alert("Hi welcome to my portfolio");
 alert("this site is still under progress . It will be updated very soon.");
-alert("NOTE : The information here is not yet fully authentic"); -->
+alert("NOTE : The information here is not yet fully authentic");  -->
     if (!localStorage.getItem("alertShown")) {
         alert("👋 Hi, welcome to my portfolio!\n\n⚠ This site is still under progress.\n🛠 It will be updated very soon.\nℹ Note: The information here is not yet fully authentic.");
         localStorage.setItem("alertShown", "true");
     }
+   
     </script>
 </body>
 </html>

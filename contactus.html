@@ -33,26 +33,26 @@
             <h1>Fill The Form</h1>
             <!--input of user personal -->
             <label for="fullName">Your full name</label>
-            <input type="text" id="fullName"  placeholder="Type Your Full Name" required>
+            <input type="text" id="fullName" name="user_name"  placeholder="Type Your Full Name" required>
             <br>
             <label for="Email">Fill Your Email</label>
-            <input type="text" id="email" placeholder="Type E-mail"required>
+            <input type="text" id="email" name="user_email" placeholder="Type E-mail"required>
             <br>
             <label for="Mobile">Mobile Number</label>
-            <input type="number"  id="mobile" placeholder="Mobile Number" required>
+            <input type="number"  id="mobile" name="user_mobile" placeholder="Mobile Number" required>
             <br>
             <label for="fulladdres">location</label>
-            <input type="text" id="city"  placeholder="Enter Your Full Addres" required>
+            <input type="text" id="city" name="user-location"  placeholder="Enter Your Full Addres" required>
             <br>
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="18" max="40" placeholder="Enter Your Age">
+            <input type="number" id="age" name="age" name="age" min="18" max="40" placeholder="Enter Your Age">
             <!--picture of contactor-->
             <br>
             <label for="photo">Upload your picture <i class="fa-solid fa-file-import"></i></label>
             <input type="file" id="userphoto" name="photo" accept="image/*" required>
             </label>
             <br>
-            <label for="reason" id="reason">Reason for contacting</label>
+            <label for="reason" id="reason" name="reason">Reason for contacting</label>
             <!--dropdown for reason-->
             <select id="subject"name="subject">
                 <option value="not selected">Select your reason</option>
@@ -69,9 +69,9 @@
             </select>
             <br>
             <lable for="message">Message</lable>
-            <textarea id="message" rows="5 placeholder="Write Your Message Here....." required></textarea>
+            <textarea id="message" name="message" rows="5 placeholder="Write Your Message Here....." required></textarea>
             <div class="btn-container">
-            <button type="submit" class="formbtn">Submit</button>
+            <button type="submit" onclick="submitForm()" class="formbtn">Submit</button>
             <button type="reset" class="formbtn">Reset</button>
             </div>
 
@@ -159,7 +159,6 @@
     </footer>
     </div>
     </div>
-      <script src="script.js">
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

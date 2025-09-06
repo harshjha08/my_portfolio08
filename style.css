@@ -33,6 +33,9 @@
      --footer :  #020307;
       --main-content-empty : rgb(33, 35, 34);
 }
+#png-theme{
+    height: 2rem;
+}
 *{
     padding: 0;
     margin: 0;
@@ -86,7 +89,7 @@ a{
     width: 85px;
     border-radius: 50%;
     border: 2px solid;
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--nav-a-active-bg);
 }
 /* this one is second nav top starting from main nav */
 .nav2{
@@ -430,7 +433,7 @@ font-weight: 5px;
     
 } 
 .boxformain:hover{
-   
+   backdrop-filter: blur(20px);
     box-shadow: 0 0 15px #ff416c, 0 0 30px #ff4b2b;
 }
 /* this is box one containing my name paragraph btn */
